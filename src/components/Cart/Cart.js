@@ -26,12 +26,15 @@ const CartIsEmpty = styled.h5`
     font-weight: normal;
 `
 
+
+
 function Cart({ cart, removeFromCart }) {
 
     const calculateTotal = () => cart
         .reduce((acc, curr) => (acc + (curr.price * curr.quantity)),0)
         .toFixed(2)
 
+        console.log("cart", cart)
     return (
         <CartWrapper>
             <h2>Cart</h2>

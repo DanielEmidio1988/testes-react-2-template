@@ -63,7 +63,9 @@ const BuyBtn = styled.button`
 function ProductCard({
     product,
     addToCart
-}) {
+})
+// console.log('productCard', product)
+{
     return (
         <Container key={product.id}>
             <Image src={product.image} alt={product.title} />
